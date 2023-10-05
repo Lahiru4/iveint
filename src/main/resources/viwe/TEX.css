@@ -1,0 +1,9 @@
+.tex_fend{
+    -fx-font-weight: white;
+    -fx-text-fill: white;
+}
+
+.sub_sub{
+    -fx-text-fill: red;
+
+}

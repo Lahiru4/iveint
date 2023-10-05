@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1920.0" style="-fx-border-radius: 50;" stylesheets="@TEX.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <AnchorPane layoutX="579.0" layoutY="48.0" prefHeight="452.0" prefWidth="763.0" style="-fx-background-color: white; -fx-border-radius: 25; -fx-background-radius: 25;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="87.0" layoutY="344.0" onAction="#staartOnAction" prefHeight="41.0" prefWidth="141.0" style="-fx-background-color: #37b837;" text="Start">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="309.0" layoutY="344.0" onAction="#resetOnAction" prefHeight="41.0" prefWidth="141.0" style="-fx-background-color: rgba(52,246,217,0.59);" text="Reset">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="536.0" layoutY="344.0" onAction="#stopOnAction" prefHeight="41.0" prefWidth="141.0" style="-fx-background-color: rgba(117,104,201,0.89);" text="Stop">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TextField fx:id="time" alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="191.0" prefWidth="730.0" style="-fx-background-color: white;" text="00 : 00 : 00">
+               <font>
+                  <Font size="90.0" />
+               </font>
+            </TextField>
+            <JFXTextField fx:id="stopTime" alignment="CENTER" focusColor="WHITE" layoutX="253.0" layoutY="238.0" prefHeight="25.0" prefWidth="254.0" promptText="STOP TIME" style="-fx-border-color: red; -fx-background-radius: 10; -fx-border-radius: 10;" styleClass="sub_sub" unFocusColor="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+         <effect>
+            <DropShadow color="#bfb6b6" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="43.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: green; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: green;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="229.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: lime; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="24.0" layoutY="80.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: lime;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="417.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: gray; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: gray;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="602.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: navy black; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: navy black;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="787.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: red; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: red;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="978.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: orange; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: orange;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1169.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: yellow; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: yellow;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1727.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: BLACK; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: BLACK;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1358.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: purple; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="29.0" layoutY="77.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: purple;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1542.0" layoutY="651.0" prefHeight="208.0" prefWidth="150.0" style="-fx-background-color: brown; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow color="#a19292" />
+         </effect>
+         <children>
+            <TextField alignment="CENTER" layoutX="26.0" layoutY="79.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: brown;" styleClass="tex_fend">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#bcaeae" />
+               </effect>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="295.0" fitWidth="346.0" layoutX="1463.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ijse_logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="170.0" layoutY="127.0" style="-fx-font-weight: bold; -fx-font-size: 60;" text="Ignite' 23">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
